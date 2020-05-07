@@ -1,0 +1,259 @@
+Initialize engine version: 5.5.0f3 (38b4efef76f0)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 7400M Series (ID=0x6760)
+    Vendor:   ATI
+    VRAM:     1012 MB
+    Driver:   15.300.1025.1001
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.052 seconds
+Platform assembly: C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Pedro Pais\Documents\Global Game Jam\Manbat\Executables\Game!_Data\Managed\System.dll (this message is harmless)
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 1.603295 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 8.166410 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 1938.
+Total: 0.752785 ms (FindLiveObjects: 0.164657 ms CreateObjectMapping: 0.056670 ms MarkObjects: 0.505129 ms  DeleteObjects: 0.025434 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.891558 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 3806.
+Total: 1.121369 ms (FindLiveObjects: 0.205710 ms CreateObjectMapping: 0.058455 ms MarkObjects: 0.845601 ms  DeleteObjects: 0.010709 ms)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Arrow.OnTriggerEnter2D (UnityEngine.Collider2D other) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+NullReferenceException
+  at (wrapper managed-to-native) UnityEngine.Rigidbody2D:Sleep ()
+  at CharacterControl.Respawn () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Player.Reset () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.GameManager.ResetLevel () [0x00000] in <filename unknown>:0 
+  at Assets.Scripts.Enemy.PlayerInteraction.OnCollisionEnter2D (UnityEngine.Collision2D collision) [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1b90 -> priority: 1 
