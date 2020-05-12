@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f95568a4-c447-4462-94b3-fc5bd4bbe6fa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/Enemy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/Enemy.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Audio/map.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Audio/map.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Background Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Background Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Light Mask Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Light Mask Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Light Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Light Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Obstacle Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Obstacle Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlatformBuilder.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlatformBuilder.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ArrowTrap/Arrow.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ArrowTrap/Arrow.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ArrowTrap/ArrowTrap.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ArrowTrap/ArrowTrap.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Circle.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Circle.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Diamond.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Diamond.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Enemy/enemy5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Jumping/manbat jump1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Jumping/manbat jump1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Jumping/manbat jump2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Jumping/manbat jump2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Jumping/manbat jump3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Jumping/manbat jump3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk9.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Slow ass walk v1/walk9.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 3.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 4.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 4.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 5.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 5.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 6.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 6.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 7.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 7.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 8.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/V8 Naruto run/manbat 8.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Square.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Square.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilesets/brickbrick.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilesets/brickbrick.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Tilesets/rockrock.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Tilesets/rockrock.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/ladder.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/ladder.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/spike.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/spike.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stills/Enemy.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stills/Enemy.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stills/ManBat.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stills/ManBat.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Stills/map.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Stills/map.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectVersion.txt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="ProjectId" id="1bpBdIF0yTGWSVBFQ6fkHGILTFG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Discover.Launch.Via.Unity" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f95568a4-c447-4462-94b3-fc5bd4bbe6fa" name="Default Changelist" comment="" />
+      <created>1589319247449</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589319247449</updated>
+      <workItem from="1589319280482" duration="717000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="EditMode" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

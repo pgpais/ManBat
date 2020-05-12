@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Cheese\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Cheese\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_ManBat.908568702.00" t="ExcludeRecursive" />
+    <e p="D:\Cheese\Documents\Unity\Projects\ManBat" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="PlatformBuilderEditor.cs" t="Include" />
+        </e>
+        <e p="LightFlicker.cs" t="Include" />
+        <e p="SceneLoader.cs" t="Include" />
+        <e p="Scripts" t="Include">
+          <e p="Camera" t="Include">
+            <e p="CameraTracking.cs" t="Include" />
+          </e>
+          <e p="Character" t="Include">
+            <e p="CharacterControl.cs" t="Include" />
+            <e p="CharacterMovement.cs" t="Include" />
+            <e p="Player.cs" t="Include" />
+          </e>
+          <e p="EndPointInteraction.cs" t="Include" />
+          <e p="Enemy" t="Include">
+            <e p="EnemyCharacter.cs" t="Include" />
+            <e p="EnemyMovement.cs" t="Include" />
+            <e p="PlayerInteraction.cs" t="Include" />
+          </e>
+          <e p="GameManager.cs" t="Include" />
+          <e p="LadderInteraction.cs" t="Include" />
+          <e p="Lighting" t="Include">
+            <e p="LightManager.cs" t="Include" />
+            <e p="LightMask.cs" t="Include" />
+            <e p="Test.cs" t="Include" />
+          </e>
+          <e p="ObjectPooling" t="Include">
+            <e p="ObjectPool.cs" t="Include" />
+            <e p="ObjectPoolContainer.cs" t="Include" />
+          </e>
+          <e p="PlatformBuilder.cs" t="Include" />
+          <e p="SoundEmission.cs" t="Include" />
+          <e p="Traps" t="Include">
+            <e p="Arrow.cs" t="Include" />
+            <e p="ArrowTrap.cs" t="Include" />
+            <e p="SpikeDeathTrigger.cs" t="Include" />
+            <e p="SpikeTrap.cs" t="Include" />
+            <e p="SpikeTrapSoundTrigger.cs" t="Include" />
+          </e>
+          <e p="Util" t="Include">
+            <e p="SingletonPersistentMonobehaviour.cs" t="Include" />
+          </e>
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="BackgroundShader.shader" t="Include" />
+          <e p="LightMaskShader.shader" t="Include" />
+          <e p="LightShader.shader" t="Include" />
+          <e p="ObstacleShader.shader" t="Include" />
+        </e>
+      </e>
+      <e p="ManBat.sln" t="IncludeFlat" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
+      <e p="Temp\bin" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
