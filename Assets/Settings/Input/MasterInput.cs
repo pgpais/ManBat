@@ -22,7 +22,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""name"": ""Movement"",
                     ""type"": ""Value"",
                     ""id"": ""31fc0689-78b9-49e4-a08a-74952357223d"",
-                    ""expectedControlType"": ""Vector2"",
+                    ""expectedControlType"": ""Axis"",
                     ""processors"": """",
                     ""interactions"": """"
                 },
@@ -47,7 +47,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
                 {
                     ""name"": ""WASD"",
                     ""id"": ""da4bb993-9847-4a4a-8d26-2ff2bcdb4959"",
-                    ""path"": ""2DVector"",
+                    ""path"": ""1DAxis"",
                     ""interactions"": """",
                     ""processors"": """",
                     ""groups"": """",
@@ -56,30 +56,8 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": false
                 },
                 {
-                    ""name"": ""up"",
+                    ""name"": ""Negative"",
                     ""id"": ""7c55e00f-f4d9-489a-8a8d-927349ae7f0d"",
-                    ""path"": ""<Keyboard>/w"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard and Mouse"",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""down"",
-                    ""id"": ""394c4fbf-f22b-4b01-b074-4afc6bc50dd8"",
-                    ""path"": ""<Keyboard>/s"",
-                    ""interactions"": """",
-                    ""processors"": """",
-                    ""groups"": ""Keyboard and Mouse"",
-                    ""action"": ""Movement"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": true
-                },
-                {
-                    ""name"": ""left"",
-                    ""id"": ""c647b014-0732-41b6-b09f-f1bbc9e53755"",
                     ""path"": ""<Keyboard>/a"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -89,8 +67,8 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""isPartOfComposite"": true
                 },
                 {
-                    ""name"": ""right"",
-                    ""id"": ""53fbef3f-f5b5-4734-a2c0-99d5cbdaa91c"",
+                    ""name"": ""Positive"",
+                    ""id"": ""394c4fbf-f22b-4b01-b074-4afc6bc50dd8"",
                     ""path"": ""<Keyboard>/d"",
                     ""interactions"": """",
                     ""processors"": """",
@@ -101,22 +79,22 @@ public class @MasterInput : IInputActionCollection, IDisposable
                 },
                 {
                     ""name"": """",
-                    ""id"": ""369ece5b-5116-4199-883b-68e597703991"",
-                    ""path"": ""<Gamepad>/leftStick"",
+                    ""id"": ""f95985cf-9a4b-4695-a133-cd6fed70fa80"",
+                    ""path"": ""<Touchscreen>/touch0/position"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Controller"",
+                    ""groups"": ""Touch"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 },
                 {
                     ""name"": """",
-                    ""id"": ""f95985cf-9a4b-4695-a133-cd6fed70fa80"",
-                    ""path"": ""<Touchscreen>/touch0/position"",
+                    ""id"": ""54323ecd-f906-4849-ac17-de9380c18421"",
+                    ""path"": ""<Gamepad>/leftStick/x"",
                     ""interactions"": """",
                     ""processors"": """",
-                    ""groups"": ""Touch"",
+                    ""groups"": ""Controller"",
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false

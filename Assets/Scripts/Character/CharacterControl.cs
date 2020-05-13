@@ -14,8 +14,12 @@ public class CharacterControl : CharacterMovement {
 	[Tooltip("Set the character jump strength")]
 	public float jumpStrength;
 
-	float jumpStartTime;
-	bool jumping = false;
+	[Header("Jump parameters")] 
+	public float jumpTime;
+	float jumpEndTime;
+    private bool isGrounded;
+    
+    [Header("Components")]
 	public Rigidbody2D rb;
 	public Animator CharacterAnimator;
 	SpriteRenderer sprite;
@@ -24,6 +28,14 @@ public class CharacterControl : CharacterMovement {
     public float WalkingSpeed = 1.5f;
     public float RunningSpeed = 2f;
 
+
+    #region Input vars
+
+    private float movH;
+	private bool isJumping = false;
+
+    #endregion
+    
 
 
     public override Rigidbody2D CharacterRigidBody
@@ -38,19 +50,20 @@ public class CharacterControl : CharacterMovement {
 	void Start () {
 		sprite = this.GetComponentInChildren<SpriteRenderer> ();
 		respawnPosition = transform.position;
+		isJumping = false;
 	}
 
 	void Update()
 	{
-
+/*
         if (Input.GetKey(KeyCode.R))
         {
             Respawn();
         }
-        if (Input.GetButtonDown("Jump") && !jumping)
+        if (Input.GetButtonDown("Jump") && !isJumping)
         {
             jumpStartTime = Time.time;
-            jumping = true;
+            isJumping = true;
         }
         if ((Input.GetButton("Jump") && (Time.time < jumpStartTime + jumpHeigthMultiplier)))
         {
@@ -74,7 +87,7 @@ public class CharacterControl : CharacterMovement {
 		else
 		{
 			CharacterAnimator.SetBool("Jumping", false);
-			jumping = false;
+			isJumping = false;
 		}
 
 		if (Mathf.Abs(rb.velocity.x) > 0 && rb.velocity.y == 0)
@@ -91,17 +104,54 @@ public class CharacterControl : CharacterMovement {
 		} else {
 			sprite.flipX = false;
 		}
-			
-			
+		
+		*/	
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	void FixedUpdate ()
+	{
+		DoMovement();
+	}
 
+	private void DoMovement()
+	{
+		Vector2 mov = new Vector2();
+
+		CheckGrounded();
 		
-        rb.velocity = new Vector2(speed * Input.GetAxis ("Horizontal"), rb.velocity.y);
-        
+		if (!isGrounded)
+		{
+			isJumping = false;
+		}
+		
+		if (isJumping)
+		{
+			mov += new Vector2(0, jumpStrength);
+			if (isGrounded)
+			{
+				jumpEndTime = Time.time + jumpTime;
+				isGrounded = false;
+			}
+			else if (Time.time > jumpEndTime)
+			{
+				isJumping = false;
+			}
+		}
+		
+		mov += new Vector2(speed * movH, 0);
 
+		rb.velocity = mov;
+	}
+
+	private void CheckGrounded()
+	{
+		throw new NotImplementedException();
+	}
+
+	private void HandleJumping(Vector2 mov)
+	{
+		
 	}
 
 	void OnCollisionEnter2D (Collision2D coll){
@@ -114,6 +164,23 @@ public class CharacterControl : CharacterMovement {
     {
         rb.Sleep();
         this.transform.position = respawnPosition;
-        jumping = false;
+        isJumping = false;
     }
+
+
+    #region Receive Input
+
+    public void ReceiveMovInput(float mov)
+    {
+	    movH = mov;
+    }
+
+    public void ReceiveJumpInput(bool b)
+    {
+	    if(isGrounded)
+			isJumping = true;
+    }
+
+    #endregion
+    
 }

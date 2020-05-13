@@ -2,8 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f95568a4-c447-4462-94b3-fc5bd4bbe6fa" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Manbat/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Manbat/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Manbat/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Manbat/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Input/MasterInput.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Input/MasterInput.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Input/MasterInput.inputactions" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Input/MasterInput.inputactions" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 1.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 1.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 2.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 2.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 3.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Sprites/Movement sprites v1/Idle V1/still 3.png.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,6 +24,14 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterMovement.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Character/CharacterControl.cs" />
+      </list>
+    </option>
   </component>
   <component name="ProjectId" id="1bpBdIF0yTGWSVBFQ6fkHGILTFG" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -55,7 +70,7 @@
       <option name="presentableId" value="Default" />
       <updated>1589319247449</updated>
       <workItem from="1589319280482" duration="717000" />
-      <workItem from="1589392112358" duration="1119000" />
+      <workItem from="1589392112358" duration="7111000" />
     </task>
     <servers />
   </component>
