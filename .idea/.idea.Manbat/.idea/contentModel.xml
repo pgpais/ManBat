@@ -51,6 +51,11 @@
             <e p="SingletonPersistentMonobehaviour.cs" t="Include" />
           </e>
         </e>
+        <e p="Settings" t="Include">
+          <e p="Input" t="Include">
+            <e p="MasterInput.cs" t="Include" />
+          </e>
+        </e>
         <e p="Shaders" t="Include">
           <e p="BackgroundShader.shader" t="Include" />
           <e p="LightMaskShader.shader" t="Include" />
