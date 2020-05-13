@@ -18,6 +18,12 @@ public class CharacterControl : CharacterMovement {
 	public float jumpTime;
 	float jumpEndTime;
     private bool isGrounded;
+
+    [Header("Ground Check")] 
+    public Transform topLeft;
+	public Transform bottomRight;
+	[SerializeField] private LayerMask groundCheckLayerMask;
+    
     
     [Header("Components")]
 	public Rigidbody2D rb;
@@ -34,7 +40,7 @@ public class CharacterControl : CharacterMovement {
     private float movH;
 	private bool isJumping = false;
 
-    #endregion
+	#endregion
     
 
 
@@ -118,16 +124,11 @@ public class CharacterControl : CharacterMovement {
 	{
 		Vector2 mov = new Vector2();
 
-		CheckGrounded();
-		
-		if (!isGrounded)
-		{
-			isJumping = false;
-		}
 		
 		if (isJumping)
 		{
-			mov += new Vector2(0, jumpStrength);
+			Debug.Log("Started Jump");
+			mov.y += jumpStrength;
 			if (isGrounded)
 			{
 				jumpEndTime = Time.time + jumpTime;
@@ -135,18 +136,25 @@ public class CharacterControl : CharacterMovement {
 			}
 			else if (Time.time > jumpEndTime)
 			{
+				Debug.Log("Ended jump");
 				isJumping = false;
 			}
 		}
+		else
+		{
+			mov.y += rb.velocity.y;
+		}
 		
-		mov += new Vector2(speed * movH, 0);
+		CheckGrounded();
+		
+		mov.x += speed * movH;
 
 		rb.velocity = mov;
 	}
 
 	private void CheckGrounded()
 	{
-		throw new NotImplementedException();
+		isGrounded = Physics2D.OverlapArea(topLeft.position, bottomRight.position, groundCheckLayerMask);
 	}
 
 	private void HandleJumping(Vector2 mov)
@@ -177,10 +185,29 @@ public class CharacterControl : CharacterMovement {
 
     public void ReceiveJumpInput(bool b)
     {
-	    if(isGrounded)
-			isJumping = true;
+	    if (b)
+	    {
+		    if (isGrounded)
+			    isJumping = true;
+	    }
+	    else
+	    {
+		    isJumping = false;
+	    }
     }
 
     #endregion
-    
+
+    private void OnDrawGizmos()
+    {
+	    Gizmos.color = Color.red;
+	    Gizmos.DrawSphere(topLeft.position, 0.01f);
+	    Gizmos.DrawSphere(bottomRight.position, 0.01f);
+	    Gizmos.color = Color.green;
+	    Gizmos.DrawLine(topLeft.position, new Vector3(bottomRight.position.x, topLeft.position.y));
+	    Gizmos.DrawLine(topLeft.position, new Vector3(topLeft.position.x, bottomRight.position.y));
+	    Gizmos.DrawLine(bottomRight.position, new Vector3(topLeft.position.x, bottomRight.position.y));
+	    Gizmos.DrawLine(bottomRight.position, new Vector3(bottomRight.position.x, topLeft.position.y));
+	    
+    }
 }
