@@ -41,6 +41,7 @@ public class CharacterControl : CharacterMovement {
 	private bool isJumping = false;
 	private static readonly int Speed = Animator.StringToHash("Speed");
 	private static readonly int Running = Animator.StringToHash("Running");
+	private static readonly int YSpeed = Animator.StringToHash("ySpeed");
 
 	#endregion
     
@@ -154,6 +155,7 @@ public class CharacterControl : CharacterMovement {
 		rb.velocity = mov;
 		
 		CharacterAnimator.SetFloat(Speed, Mathf.Abs(mov.x));
+		CharacterAnimator.SetFloat(YSpeed, rb.velocity.y);
 		if (rb.velocity.x < 0) {
 			sprite.flipX = true;
 		} else {
