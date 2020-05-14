@@ -39,6 +39,8 @@ public class CharacterControl : CharacterMovement {
 
     private float movH;
 	private bool isJumping = false;
+	private static readonly int Speed = Animator.StringToHash("Speed");
+	private static readonly int Running = Animator.StringToHash("Running");
 
 	#endregion
     
@@ -150,6 +152,13 @@ public class CharacterControl : CharacterMovement {
 		mov.x += speed * movH;
 
 		rb.velocity = mov;
+		
+		CharacterAnimator.SetFloat(Speed, Mathf.Abs(mov.x));
+		if (rb.velocity.x < 0) {
+			sprite.flipX = true;
+		} else {
+			sprite.flipX = false;
+		}
 	}
 
 	private void CheckGrounded()
@@ -193,6 +202,19 @@ public class CharacterControl : CharacterMovement {
 	    else
 	    {
 		    isJumping = false;
+	    }
+    }
+
+    public void ReceiveRunInput(bool b)
+    {
+		CharacterAnimator.SetBool(Running, b);
+	    if (b)
+	    {
+		    speed = RunningSpeed;
+	    }
+	    else
+	    {
+		    speed = WalkingSpeed;
 	    }
     }
 

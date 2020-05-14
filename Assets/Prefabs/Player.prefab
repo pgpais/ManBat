@@ -119,7 +119,18 @@ MonoBehaviour:
     m_ActionId: 972ddbfb-88ba-4045-9228-653ca24dad34
     m_ActionName: Player/Jump[/DualShock4GamepadHID/buttonSouth]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114843565640380306}
+        m_MethodName: OnRun
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 79c1628d-751a-4c86-8b79-78dcea7b3f54
     m_ActionName: Player/Run[/DualShock4GamepadHID/buttonWest]
   m_NeverAutoSwitchControlSchemes: 0

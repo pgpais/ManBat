@@ -29,7 +29,6 @@ namespace Assets.Scripts
 
         public void OnJump(InputAction.CallbackContext ctx)
         {
-            Debug.Log(ctx.phase);
             if (ctx.performed)
             {
                 CharacterMovement.ReceiveJumpInput(true);
@@ -38,6 +37,19 @@ namespace Assets.Scripts
             if (ctx.canceled)
             {
                 CharacterMovement.ReceiveJumpInput(false);
+            }
+        }
+        
+        public void OnRun(InputAction.CallbackContext ctx)
+        {
+            if (ctx.performed)
+            {
+                CharacterMovement.ReceiveRunInput(true);
+            }
+
+            if (ctx.canceled)
+            {
+                CharacterMovement.ReceiveRunInput(false);
             }
         }
 
