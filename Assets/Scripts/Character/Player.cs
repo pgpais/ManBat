@@ -53,6 +53,11 @@ namespace Assets.Scripts
             }
         }
 
+        public void OnTouch(InputAction.CallbackContext ctx)
+        {
+            Debug.Log(ctx.ReadValue<Vector2>());
+        }
+
         #endregion
     }
 }
