@@ -158,7 +158,7 @@ public class CharacterControl : CharacterMovement {
 		CharacterAnimator.SetFloat(YSpeed, rb.velocity.y);
 		if (rb.velocity.x < 0) {
 			sprite.flipX = true;
-		} else {
+		} else if(rb.velocity.x > 0){
 			sprite.flipX = false;
 		}
 	}
