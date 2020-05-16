@@ -14,8 +14,18 @@ public class CharacterControl : CharacterMovement {
 	[Tooltip("Set the character jump strength")]
 	public float jumpStrength;
 
-	float jumpStartTime;
-	bool jumping = false;
+	[Header("Jump parameters")] 
+	public float jumpTime;
+	float jumpEndTime;
+    private bool isGrounded;
+
+    [Header("Ground Check")] 
+    public Transform topLeft;
+	public Transform bottomRight;
+	[SerializeField] private LayerMask groundCheckLayerMask;
+    
+    
+    [Header("Components")]
 	public Rigidbody2D rb;
 	public Animator CharacterAnimator;
 	SpriteRenderer sprite;
@@ -24,6 +34,17 @@ public class CharacterControl : CharacterMovement {
     public float WalkingSpeed = 1.5f;
     public float RunningSpeed = 2f;
 
+
+    #region Input vars
+
+    private float movH;
+	private bool isJumping = false;
+	private static readonly int Speed = Animator.StringToHash("Speed");
+	private static readonly int Running = Animator.StringToHash("Running");
+	private static readonly int YSpeed = Animator.StringToHash("ySpeed");
+
+	#endregion
+    
 
 
     public override Rigidbody2D CharacterRigidBody
@@ -38,19 +59,20 @@ public class CharacterControl : CharacterMovement {
 	void Start () {
 		sprite = this.GetComponentInChildren<SpriteRenderer> ();
 		respawnPosition = transform.position;
+		isJumping = false;
 	}
 
 	void Update()
 	{
-
+/*
         if (Input.GetKey(KeyCode.R))
         {
             Respawn();
         }
-        if (Input.GetButtonDown("Jump") && !jumping)
+        if (Input.GetButtonDown("Jump") && !isJumping)
         {
             jumpStartTime = Time.time;
-            jumping = true;
+            isJumping = true;
         }
         if ((Input.GetButton("Jump") && (Time.time < jumpStartTime + jumpHeigthMultiplier)))
         {
@@ -74,7 +96,7 @@ public class CharacterControl : CharacterMovement {
 		else
 		{
 			CharacterAnimator.SetBool("Jumping", false);
-			jumping = false;
+			isJumping = false;
 		}
 
 		if (Mathf.Abs(rb.velocity.x) > 0 && rb.velocity.y == 0)
@@ -91,17 +113,64 @@ public class CharacterControl : CharacterMovement {
 		} else {
 			sprite.flipX = false;
 		}
-			
-			
+		
+		*/	
 	}
 
 	// Update is called once per frame
-	void FixedUpdate () {
+	void FixedUpdate ()
+	{
+		DoMovement();
+	}
+
+	private void DoMovement()
+	{
+		Vector2 mov = new Vector2();
 
 		
-        rb.velocity = new Vector2(speed * Input.GetAxis ("Horizontal"), rb.velocity.y);
-        
+		if (isJumping)
+		{
+			Debug.Log("Started Jump");
+			mov.y += jumpStrength;
+			if (isGrounded)
+			{
+				jumpEndTime = Time.time + jumpTime;
+				isGrounded = false;
+			}
+			else if (Time.time > jumpEndTime)
+			{
+				Debug.Log("Ended jump");
+				isJumping = false;
+			}
+		}
+		else
+		{
+			mov.y += rb.velocity.y;
+		}
+		
+		CheckGrounded();
+		
+		mov.x += speed * movH;
 
+		rb.velocity = mov;
+		
+		CharacterAnimator.SetFloat(Speed, Mathf.Abs(mov.x));
+		CharacterAnimator.SetFloat(YSpeed, rb.velocity.y);
+		if (rb.velocity.x < 0) {
+			sprite.flipX = true;
+		} else if(rb.velocity.x > 0){
+			sprite.flipX = false;
+		}
+	}
+
+	private void CheckGrounded()
+	{
+		isGrounded = Physics2D.OverlapArea(topLeft.position, bottomRight.position, groundCheckLayerMask);
+	}
+
+	private void HandleJumping(Vector2 mov)
+	{
+		
 	}
 
 	void OnCollisionEnter2D (Collision2D coll){
@@ -114,6 +183,55 @@ public class CharacterControl : CharacterMovement {
     {
         rb.Sleep();
         this.transform.position = respawnPosition;
-        jumping = false;
+        isJumping = false;
+    }
+
+
+    #region Receive Input
+
+    public void ReceiveMovInput(float mov)
+    {
+	    movH = mov;
+    }
+
+    public void ReceiveJumpInput(bool b)
+    {
+	    if (b)
+	    {
+		    if (isGrounded)
+			    isJumping = true;
+	    }
+	    else
+	    {
+		    isJumping = false;
+	    }
+    }
+
+    public void ReceiveRunInput(bool b)
+    {
+		CharacterAnimator.SetBool(Running, b);
+	    if (b)
+	    {
+		    speed = RunningSpeed;
+	    }
+	    else
+	    {
+		    speed = WalkingSpeed;
+	    }
+    }
+
+    #endregion
+
+    private void OnDrawGizmos()
+    {
+	    Gizmos.color = Color.red;
+	    Gizmos.DrawSphere(topLeft.position, 0.01f);
+	    Gizmos.DrawSphere(bottomRight.position, 0.01f);
+	    Gizmos.color = Color.green;
+	    Gizmos.DrawLine(topLeft.position, new Vector3(bottomRight.position.x, topLeft.position.y));
+	    Gizmos.DrawLine(topLeft.position, new Vector3(topLeft.position.x, bottomRight.position.y));
+	    Gizmos.DrawLine(bottomRight.position, new Vector3(topLeft.position.x, bottomRight.position.y));
+	    Gizmos.DrawLine(bottomRight.position, new Vector3(bottomRight.position.x, topLeft.position.y));
+	    
     }
 }

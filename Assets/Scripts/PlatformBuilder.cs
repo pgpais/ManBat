@@ -24,7 +24,7 @@ public class PlatformBuilder : MonoBehaviour
 		Vector3 position = Vector3.zero;
 
 		if (spritesContainer == null) {
-			Transform t = transform.FindChild ("SpritesContainer");
+			Transform t = transform.Find ("SpritesContainer");
 			if (t != null) {
 				spritesContainer = t.gameObject;
 			}
