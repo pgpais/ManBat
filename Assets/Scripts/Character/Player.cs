@@ -17,17 +17,13 @@ namespace Assets.Scripts
 #if UNITY_ANDROID || UNITY_IOS
             Debug.Log("Android or IOS");
             inputUi.SetActive(true);
+            
 #else
             inputUi.SetActive(false);
 #endif
             
         }
 
-        private void OnDeviceChanged()
-        {
-            
-        }
-        
         public void Reset()
         {
             CharacterMovement.Respawn();
