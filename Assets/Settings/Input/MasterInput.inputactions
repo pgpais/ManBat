@@ -9,7 +9,7 @@
                     "name": "Movement",
                     "type": "Value",
                     "id": "31fc0689-78b9-49e4-a08a-74952357223d",
-                    "expectedControlType": "Axis",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
@@ -26,14 +26,6 @@
                     "type": "Button",
                     "id": "79c1628d-751a-4c86-8b79-78dcea7b3f54",
                     "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Touch",
-                    "type": "Value",
-                    "id": "510c8edd-d043-4297-a868-6261e8121393",
-                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 }
@@ -75,7 +67,7 @@
                 {
                     "name": "",
                     "id": "54323ecd-f906-4849-ac17-de9380c18421",
-                    "path": "<Gamepad>/leftStick/x",
+                    "path": "<Gamepad>/leftStick",
                     "interactions": "",
                     "processors": "",
                     "groups": "Controller",
@@ -115,17 +107,6 @@
                     "action": "Run",
                     "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "2c8f0557-aaeb-4bcb-b5f2-57aa061db589",
-                    "path": "<Pointer>/position",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Touch;General Pointer",
-                    "action": "Touch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }
@@ -153,17 +134,6 @@
             "devices": [
                 {
                     "devicePath": "<Gamepad>",
-                    "isOptional": false,
-                    "isOR": false
-                }
-            ]
-        },
-        {
-            "name": "Touch",
-            "bindingGroup": "Touch",
-            "devices": [
-                {
-                    "devicePath": "<Touchscreen>",
                     "isOptional": false,
                     "isOR": false
                 }

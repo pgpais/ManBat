@@ -22,7 +22,7 @@ namespace Assets.Scripts
 
         public void OnMovement(InputAction.CallbackContext ctx)
         {
-            float mov = ctx.ReadValue<float>();
+            float mov = ctx.ReadValue<Vector2>().x;
 
             CharacterMovement.ReceiveMovInput(mov);
         }
