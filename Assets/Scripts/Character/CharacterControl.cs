@@ -60,6 +60,10 @@ public class CharacterControl : CharacterMovement {
 		sprite = this.GetComponentInChildren<SpriteRenderer> ();
 		respawnPosition = transform.position;
 		isJumping = false;
+#if UNITY_ANDROID || UNITY_IOS
+		speed = RunningSpeed;
+#endif
+
 	}
 
 	void Update()
