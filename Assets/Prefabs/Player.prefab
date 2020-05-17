@@ -808,10 +808,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cfec7bd7181245a787e268a95671a50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpHeigthMultiplier: 0.3
+  jumpHeigthMultiplier: 0.1
   speed: 1.5
   jumpStrength: 5
-  jumpTime: 0.3
+  jumpTime: 0.4
   topLeft: {fileID: 6205064800433207366}
   bottomRight: {fileID: 6757258598483387551}
   groundCheckLayerMask:

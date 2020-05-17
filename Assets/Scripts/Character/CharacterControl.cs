@@ -18,6 +18,7 @@ public class CharacterControl : CharacterMovement {
 	public float jumpTime;
 	float jumpEndTime;
     private bool isGrounded;
+    private bool stillJumping;
 
     [Header("Ground Check")] 
     public Transform topLeft;
@@ -135,22 +136,30 @@ public class CharacterControl : CharacterMovement {
 		if (isJumping)
 		{
 			Debug.Log("Started Jump");
-			mov.y += jumpStrength;
+			
 			if (isGrounded)
 			{
+				mov.y += jumpStrength;
 				jumpEndTime = Time.time + jumpTime;
 				isGrounded = false;
-			}
-			else if (Time.time > jumpEndTime)
-			{
-				Debug.Log("Ended jump");
 				isJumping = false;
+				stillJumping = true;
 			}
+			
+		}
+		else if (Time.time <= jumpEndTime && stillJumping)
+		{
+			mov.y += jumpStrength * jumpHeigthMultiplier;
+			isJumping = false;
 		}
 		else
 		{
-			mov.y += rb.velocity.y;
+			Debug.Log("Ended jump");
+			isJumping = false;
+			stillJumping = false;
 		}
+		mov.y += rb.velocity.y;
+		
 		
 		CheckGrounded();
 		
@@ -203,11 +212,15 @@ public class CharacterControl : CharacterMovement {
 	    if (b)
 	    {
 		    if (isGrounded)
+		    {
 			    isJumping = true;
+			    stillJumping = true;
+		    }
 	    }
 	    else
 	    {
 		    isJumping = false;
+		    stillJumping = false;
 	    }
     }
 

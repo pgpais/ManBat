@@ -6595,6 +6595,11 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114846350285502896, guid: df7fb2a51fca9e04abde420b8409ad2f,
+        type: 3}
+      propertyPath: maxJumpSpeed
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6222504765766160115, guid: df7fb2a51fca9e04abde420b8409ad2f,
         type: 3}
       propertyPath: m_Enabled
