@@ -41,6 +41,14 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""expectedControlType"": ""Button"",
                     ""processors"": """",
                     ""interactions"": """"
+                },
+                {
+                    ""name"": "" MakeSound"",
+                    ""type"": ""Button"",
+                    ""id"": ""81ba55f4-6e86-48fe-999b-f9934526ae96"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """"
                 }
             ],
             ""bindings"": [
@@ -153,6 +161,28 @@ public class @MasterInput : IInputActionCollection, IDisposable
                     ""action"": ""Run"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""c74ac01d-9ae7-49ed-9981-06ff7367f618"",
+                    ""path"": ""<Gamepad>/buttonWest"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""General"",
+                    ""action"": "" MakeSound"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ceb98175-a116-4381-98ca-9771c7b1dea2"",
+                    ""path"": ""<Keyboard>/e"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": ""Keyboard"",
+                    ""action"": "" MakeSound"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -187,6 +217,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
         m_Player_Movement = m_Player.FindAction("Movement", throwIfNotFound: true);
         m_Player_Jump = m_Player.FindAction("Jump", throwIfNotFound: true);
         m_Player_Run = m_Player.FindAction("Run", throwIfNotFound: true);
+        m_Player_MakeSound = m_Player.FindAction(" MakeSound", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -239,6 +270,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
     private readonly InputAction m_Player_Movement;
     private readonly InputAction m_Player_Jump;
     private readonly InputAction m_Player_Run;
+    private readonly InputAction m_Player_MakeSound;
     public struct PlayerActions
     {
         private @MasterInput m_Wrapper;
@@ -246,6 +278,7 @@ public class @MasterInput : IInputActionCollection, IDisposable
         public InputAction @Movement => m_Wrapper.m_Player_Movement;
         public InputAction @Jump => m_Wrapper.m_Player_Jump;
         public InputAction @Run => m_Wrapper.m_Player_Run;
+        public InputAction @MakeSound => m_Wrapper.m_Player_MakeSound;
         public InputActionMap Get() { return m_Wrapper.m_Player; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -264,6 +297,9 @@ public class @MasterInput : IInputActionCollection, IDisposable
                 @Run.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRun;
                 @Run.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRun;
                 @Run.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnRun;
+                @MakeSound.started -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMakeSound;
+                @MakeSound.performed -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMakeSound;
+                @MakeSound.canceled -= m_Wrapper.m_PlayerActionsCallbackInterface.OnMakeSound;
             }
             m_Wrapper.m_PlayerActionsCallbackInterface = instance;
             if (instance != null)
@@ -277,6 +313,9 @@ public class @MasterInput : IInputActionCollection, IDisposable
                 @Run.started += instance.OnRun;
                 @Run.performed += instance.OnRun;
                 @Run.canceled += instance.OnRun;
+                @MakeSound.started += instance.OnMakeSound;
+                @MakeSound.performed += instance.OnMakeSound;
+                @MakeSound.canceled += instance.OnMakeSound;
             }
         }
     }
@@ -304,5 +343,6 @@ public class @MasterInput : IInputActionCollection, IDisposable
         void OnMovement(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnRun(InputAction.CallbackContext context);
+        void OnMakeSound(InputAction.CallbackContext context);
     }
 }

@@ -28,6 +28,14 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": " MakeSound",
+                    "type": "Button",
+                    "id": "81ba55f4-6e86-48fe-999b-f9934526ae96",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -138,6 +146,28 @@
                     "processors": "",
                     "groups": "Keyboard",
                     "action": "Run",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "c74ac01d-9ae7-49ed-9981-06ff7367f618",
+                    "path": "<Gamepad>/buttonWest",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "General",
+                    "action": " MakeSound",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ceb98175-a116-4381-98ca-9771c7b1dea2",
+                    "path": "<Keyboard>/e",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "Keyboard",
+                    "action": " MakeSound",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

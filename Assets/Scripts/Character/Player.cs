@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using Assets.Scripts.Lighting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -11,6 +12,8 @@ namespace Assets.Scripts
     {
         public CharacterControl CharacterMovement;
         public GameObject inputUi;
+        public float screechSpeed = 5f;
+        public Transform head;
 
         private void Start()
         {
@@ -63,6 +66,14 @@ namespace Assets.Scripts
             if (ctx.canceled)
             {
                 CharacterMovement.ReceiveRunInput(false);
+            }
+        }
+
+        public void OnMakeSound(InputAction.CallbackContext ctx)
+        {
+            if (ctx.performed)
+            {
+                LightManager.Instance.CreateLight(head.position, screechSpeed);
             }
         }
 

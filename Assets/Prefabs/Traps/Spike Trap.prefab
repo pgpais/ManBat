@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 212245957178353564}
   - component: {fileID: 60390864809194972}
   - component: {fileID: 114562723536655986}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spike (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 212933447093227808}
   - component: {fileID: 60729305071175414}
   - component: {fileID: 114535111003043210}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spike
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -258,7 +258,7 @@ GameObject:
   - component: {fileID: 212532691591572252}
   - component: {fileID: 60880929618800300}
   - component: {fileID: 114205814017370400}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spike (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -381,7 +381,7 @@ GameObject:
   - component: {fileID: 212213878176817254}
   - component: {fileID: 60112265386213746}
   - component: {fileID: 114430596741541604}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spike (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -501,7 +501,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4514946496214090}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Top Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -538,7 +538,7 @@ GameObject:
   - component: {fileID: 4169207128953576}
   - component: {fileID: 61223196460288232}
   - component: {fileID: 114859604424181348}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spike Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -609,7 +609,7 @@ GameObject:
   - component: {fileID: 4002299162280864}
   - component: {fileID: 114991291403294830}
   - component: {fileID: 82290962748123100}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spike Trap
   m_TagString: Trap
   m_Icon: {fileID: 0}
@@ -764,7 +764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4093914265844438}
   - component: {fileID: 212134114145727470}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bottom Part
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -846,7 +846,7 @@ GameObject:
   - component: {fileID: 4117546145146572}
   - component: {fileID: 61987364908208170}
   - component: {fileID: 114948538017277470}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sound Trigger
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -915,7 +915,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4673331819317960}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sound Spawn Location
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -945,7 +945,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4107452969829268}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sprites
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -980,7 +980,7 @@ GameObject:
   - component: {fileID: 212064286909373522}
   - component: {fileID: 60634595773906426}
   - component: {fileID: 114284949533394766}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Spike (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
